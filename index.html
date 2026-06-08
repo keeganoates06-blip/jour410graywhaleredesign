@@ -92,13 +92,45 @@ body{
 /* ============================================
    HERO
 ============================================ */
-.hero{
-  position:relative;min-height:100vh;display:flex;align-items:center;
-  justify-content:center;text-align:center;padding:90px 24px 80px;
-  background:linear-gradient(170deg,rgba(8,20,34,0.55) 0%,rgba(10,37,64,0.72) 60%,rgba(8,20,34,0.85) 100%),
-    url('images/IMG_7486.jpg') center 30%/cover no-repeat;
+.hero {
+    min-height: 100vh;
+    background-image: url("images/IMG_7486.jpg")
+    background-size cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px 60px;
+    max-width: 800px;
+    border-radius: 4px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2.8em;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 16px;
+}
+
+.deck {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 12px;
+}
+
+.byline {
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+    font-family: var(--heading-font);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
 /* ============================================
    SECTION SHARED
 ============================================ */
@@ -263,7 +295,7 @@ body{
 ============================================ */
 .parallax{
   position:relative;height:60vh;min-height:380px;width:100vw;margin-left:calc(50% - 50vw);
-  background:url('images/IMG_8625.JPEG') center/cover no-repeat;background-attachment:scroll;
+  background: url("images/IMG_8625.JPEG")/cover no-repeat;background-attachment:scroll;
   display:flex;align-items:center;justify-content:center;
 }
 .parallax::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(6,24,43,0.35),rgba(6,24,43,0.6));}
