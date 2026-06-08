@@ -96,7 +96,7 @@ body{
   position:relative;min-height:100vh;display:flex;align-items:center;
   justify-content:center;text-align:center;padding:90px 24px 80px;
   background:linear-gradient(170deg,rgba(8,20,34,0.55) 0%,rgba(10,37,64,0.72) 60%,rgba(8,20,34,0.85) 100%),
-             url('images//Users/keeganoates/Desktop/Redesign/images/IMG_7486.jpg') center 30%/cover no-repeat;
+background-image url('Images/IMG_7486.jpg');
 }
 .hero::after{
   content:'';position:absolute;left:0;right:0;bottom:0;height:140px;
@@ -633,72 +633,77 @@ footer a:hover{text-decoration:underline;}
 </section>
 
 <!-- ===== AUDIO ===== -->
-<section id="audio" class="audio-section">
-  <div class="reading-lane">
-    <span class="section-label">Student Voices</span>
-    <h2>What is your <em>whale?</em></h2>
-    <p style="font-size:1.12rem;color:var(--ink-soft);">Cal Poly students share an animal species they care deeply about and explain why protecting it matters to them &mdash; a reminder that conservation is personal.</p>
-  </div>
+</section>
 
-  <audio id="audio1"><source src="Gifs/Audio#1.mp3" type="audio/mpeg"></audio>
-  <audio id="audio2"><source src="Gifs/Audio#2.mp3" type="audio/mpeg"></audio>
-  <audio id="audio3"><source src="Gifs/Audio#3.mp3" type="audio/mpeg"></audio>
+    <section id="audio" class="section alt-bg">
+    <h2>What is your Whale?</h2>
 
-  <div class="audio-board">
-    <div class="audio-card" data-n="1">
-      <div class="audio-img-wrap">
-        <img src="Gifs/GIF_#1.gif" data-gif="Gifs/GIF_%231.gif" data-still="Gifs/GIF%231img.JPG" alt="Leah Orsinii">
-        <div class="play-overlay"><span class="pico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
-      </div>
-      <div class="audio-card-body">
-        <p class="audio-name">Leah Orsinii</p>
-        <div class="waveform"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-        <p class="audio-hint">Click to play</p>
-      </div>
+    <p class="section-intro">
+        This section gives Cal Poly students the opportunity to share an animal species they care deeply about and explain why protecting it matters to them. The audio project highlights the personal connections people have with wildlife and conservation.
+    </p>
+
+    <audio id="audio_1"><source src="Gifs/Audio%231.mp3" type="audio/mpeg"></audio>
+    <audio id="audio_2"><source src="Gifs/Audio%232.mp3" type="audio/mpeg"></audio>
+    <audio id="audio_3"><source src="Gifs/Audio%233.mp3" type="audio/mpeg"></audio>
+
+    <div class="audio-board">
+        <div class="audio-speaker">
+            <img src="Gifs/GIF_%231.gif" class="rollover" alt="Speaker 1"
+                onmouseover="this.src='Gifs/GIF%231img.JPG'"
+                onmouseout="this.src='Gifs/GIF_%231.gif'"
+                onclick="document.getElementById('audio_1').play(); return false;"
+                ondblclick="document.getElementById('audio_1').pause(); return false;">
+            <p class="audio-label">Leah Orsinii</p>
+        </div>
+
+        <div class="audio-speaker">
+            <img src="Gifs/GIF%20%232_1.gif" class="rollover" alt="Speaker 2"
+                onmouseover="this.src='Gifs/GIF%232img.JPG'"
+                onmouseout="this.src='Gifs/GIF%20%232_1.gif'"
+                onclick="document.getElementById('audio_2').play(); return false;"
+                ondblclick="document.getElementById('audio_2').pause(); return false;">
+            <p class="audio-label">Ella Erdem</p>
+        </div>
+
+        <div class="audio-speaker">
+            <img src="Gifs/GIF%20%233_1.gif" class="rollover" alt="Speaker 3"
+                onmouseover="this.src='Gifs/GIF%233img.JPG'"
+                onmouseout="this.src='Gifs/GIF%20%233_1.gif'"
+                onclick="document.getElementById('audio_3').play(); return false;"
+                ondblclick="document.getElementById('audio_3').pause(); return false;">
+            <p class="audio-label">Andrea de la Vega</p>
+        </div>
     </div>
 
-    <div class="audio-card" data-n="2">
-      <div class="audio-img-wrap">
-        <img src="Gifs/GIF #2_1.gif" data-gif="Gifs/GIF%20%232_1.gif" data-still="Gifs/GIF%232img.JPG" alt="Ella Erdem">
-        <div class="play-overlay"><span class="pico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
-      </div>
-      <div class="audio-card-body">
-        <p class="audio-name">Ella Erdem</p>
-        <div class="waveform"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-        <p class="audio-hint">Click to play</p>
-      </div>
-    </div>
-
-    <div class="audio-card" data-n="3">
-      <div class="audio-img-wrap">
-        <img src="Gifs/GIF #3_1.gif" data-gif="Gifs/GIF%20%233_1.gif" data-still="Gifs/GIF%233img.JPG" alt="Andrea de la Vega">
-        <div class="play-overlay"><span class="pico"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span></div>
-      </div>
-      <div class="audio-card-body">
-        <p class="audio-name">Andrea de la Vega</p>
-        <div class="waveform"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
-        <p class="audio-hint">Click to play</p>
-      </div>
-    </div>
-  </div>
-  <p class="audio-instructions">Click a portrait to play &middot; click again to pause</p>
+    <p class="audio-instructions">Click an image to play &nbsp;|&nbsp; Double-click to pause</p>
 </section>
 
 <!-- ===== VIDEO ===== -->
-<section id="video" class="video-section">
-  <div class="reading-lane">
-    <span class="section-label">Documentary</span>
-    <h2>Voices of the <em>migration</em></h2>
-    <p style="font-size:1.12rem;color:var(--ink-soft);">Through interviews with Happy Whale founder Dr. Ted Cheeseman and Avila Beach whale watching owner Mark Kocina, this video explores how gray whale populations have changed over the last decade &mdash; and what those shifts mean for the future of whale conservation.</p>
-  </div>
-  <div class="video-wrapper">
-    <video controls poster="Images/videocover.JPG">
-      <source src="video/GrayWhaleMigration%20Crisis.mp4" type="video/mp4">
-      <track src="captions.vtt" kind="captions" srclang="en" label="English" default>
-      Your browser does not support video.
+<section id="video" class="section">
+    <h2>Voices of the Migration</h2>
+
+    <p class="section-intro">
+        Through interviews with Happy Whale founder Dr. Ted Cheeseman and Avila Beach whale watching owner Mark Kocina, this video explores how gray whale populations have changed over the last decade and what those shifts have meant for researchers, local communities and the future of whale conservation.
+    </p>
+
+    <div class="video-wrapper">
+    <video controls poster="images/videocover.JPG" width="100%">
+        
+        <source src="video/GrayWhaleMigration Crisis.mp4" type="video/mp4">
+
+        <track 
+            src="captions.vtt"
+            kind="captions"
+            srclang="en"
+            label="English"
+            default>
+
+        Your browser does not support video.
     </video>
-    <p class="vcaption">Dr. Ted Cheeseman and Mark Kocina discuss the environmental changes affecting gray whale populations along California's Central Coast.</p>
-  </div>
+    <p class="caption">
+        Dr. Ted Cheeseman and Mark Kocina discuss the environmental changes affecting gray whale populations along California’s Central Coast.
+    </p>
+</div>
 </section>
 
 <!-- ===== FOOTER ===== -->
