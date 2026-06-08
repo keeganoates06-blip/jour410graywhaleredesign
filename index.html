@@ -96,6 +96,7 @@ body{
     min-height: 100vh;
     background-image: url("images/IMG_7486.jpg")
     background-size cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -293,15 +294,19 @@ h1 {
 /* ============================================
    PARALLAX DIVIDER
 ============================================ */
-.parallax{
-  position:relative;height:60vh;min-height:380px;width:100vw;margin-left:calc(50% - 50vw);
-  background: url("images/IMG_8625.JPEG")/cover no-repeat;background-attachment:scroll;
-  display:flex;align-items:center;justify-content:center;
+.parallax-divider {
+    height: 100vh;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
 }
-.parallax::before{content:'';position:absolute;inset:0;background:linear-gradient(to bottom,rgba(6,24,43,0.35),rgba(6,24,43,0.6));}
-.parallax-caption{position:relative;z-index:2;text-align:center;max-width:640px;padding:0 24px;}
-.parallax-caption p{font-family:var(--f-head);font-style:italic;font-size:clamp(1.3rem,3vw,2rem);color:#fff;line-height:1.4;text-shadow:0 2px 24px rgba(0,0,0,.5);}
 
+.parallax-1 {
+    background-image: url("images/IMG_8625.JPEG")
+}
 /* ============================================
    POPULATION CHART
 ============================================ */
